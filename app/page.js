@@ -1,4 +1,5 @@
 "use client"
+import ShoUrlSchema from "@/components/ShoUrlSchema";
 import { useState } from "react";
 import Link from "next/link";
 import axios from "axios";
@@ -24,6 +25,7 @@ export default function Home() {
   return (
     <main className="min-h-[80vh] flex flex-col items-center justify-center px-4 relative m-2">
       {/* Background Decorative Glows */}
+     <ShoUrlSchema />
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-blue-600/20 blur-[120px] rounded-full"></div>
       
       <div className="w-full max-w-md z-10">
