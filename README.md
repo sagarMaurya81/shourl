@@ -1,35 +1,32 @@
-Live link : https://www.shourl.in/
-## Getting Started
+# ShoUrl - URL Shortener
 
-First, run the development server:
+A fully functional URL shortening application that takes long, unwieldy links and turns them into clean, manageable URLs. 
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Live Demo:** [https://shourl.in](https://shourl.in)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Features
+- **URL Shortening:** Convert long URLs into easily shareable short links.
+- **Redirection:** Fast and reliable redirection to the original destination.
+- **Custom Aliases:** Create memorable custom short links.
+- **Click Analytics:** Track how many times your shortened URLs are visited.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
+- **Frontend:** React.js / Next.js
+- **Backend:** Node.js, Express.js
+- **Database:** MongoDB
+- **File Handling:** Multer (for managing user avatars, assets, or custom QR code uploads)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 📦 Installation & Setup
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/sagarMaurya81/shourl.git](https://github.com/sagarMaurya81/shourl.git)
+   cd shourl
+2. **Install dependencies: **
+   ```bash
+         npm install
+3.**Environment Variables: **
+   Create a .env file in your server directory. You will need to define your environment variables such as your MongoDB connection string and your preferred server port.
+4.**Run the application: **
+  ```bash
+        npm run dev
