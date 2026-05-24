@@ -43,7 +43,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-    <head><meta name="google-site-verification" content="i8EYQHMDcflONPgt-ea6VAphptVnWlU-gCSJqm6aXBU" /></head>
+    
       <body className="h-screen bg-[#09090b] bg-[radial-gradient(#27272a_0.5px,transparent_0.5px)] " >
          <Navbar/>
         {children}
