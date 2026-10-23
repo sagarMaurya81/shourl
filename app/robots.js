@@ -5,11 +5,11 @@ export default function robots() {
       {
         userAgent: '*',
         allow: '/',
-        // Don't let Google index short redirect URLs or API routes
-        disallow: ['/api/', '/_next/'],
+        // Disallow API routes from indexing, but allow Googlebot to load CSS/JS chunks
+        disallow: ['/api/'],
       },
     ],
     sitemap: 'https://shourl-alpha.vercel.app/sitemap.xml',
-    host: 'https://shourl-alpha.vercel.app',
   };
 }
+
