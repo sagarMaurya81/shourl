@@ -12,9 +12,9 @@ const Navbar = () => {
 
         <div className="group cursor-pointer">
           <Link href="/">
-          <h1 className="text-xl font-black tracking-tighter italic">
+          <span className="text-xl font-black tracking-tighter italic">
             Sho<span className="text-blue-500 group-hover:text-blue-400 transition-colors">UrL</span>
-          </h1>
+          </span>
           </Link>
           <div className="h-0.5 w-0 group-hover:w-full bg-blue-500 transition-all duration-300"></div>
         </div>

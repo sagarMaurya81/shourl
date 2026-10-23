@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Footer = () => {
   return (
@@ -19,8 +20,8 @@ const Footer = () => {
 
           {/* Minimalist Navigation */}
           <div className="flex items-center gap-6">
-            <a href="#" className="text-zinc-500 hover:text-blue-400 text-xs transition-colors duration-300">Privacy</a>
-            <a href="#" className="text-zinc-500 hover:text-blue-400 text-xs transition-colors duration-300">Terms</a>
+            <Link href="/privacy" className="text-zinc-500 hover:text-blue-400 text-xs transition-colors duration-300">Privacy</Link>
+            <Link href="/terms" className="text-zinc-500 hover:text-blue-400 text-xs transition-colors duration-300">Terms</Link>
             <div className="h-4 w-[1px] bg-zinc-800"></div>
             <p className="text-zinc-600 text-[10px] uppercase tracking-[0.2em]">All Rights Reserved</p>
           </div>
