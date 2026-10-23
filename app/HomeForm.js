@@ -14,7 +14,8 @@ export default function HomeForm() {
     setLoading(true);
     try {
       await axios.post("api/generate", { url, shorturl });
-      setgenerate(`${process.env.NEXT_PUBLIC_HOST}/${shorturl}`);
+      const host = process.env.NEXT_PUBLIC_HOST || "https://shourl-alpha.vercel.app";
+      setgenerate(`${host}/${shorturl}`);
       seturl("");
       setshorturl("");
     } catch (error) {
@@ -41,10 +42,12 @@ export default function HomeForm() {
         </div>
 
         {/* Alias Input */}
-        <div className="relative">
-          <span className="absolute left-4 top-1/2 -translate-y-1/2 text-zinc-500 font-mono text-sm">shourl-alpha.vercel.app/</span>
+        <div className="flex items-center w-full bg-zinc-800/50 border border-zinc-700 rounded-2xl focus-within:ring-2 focus-within:ring-blue-500/50 focus-within:border-blue-500 transition-all">
+          <span className="pl-4 pr-1 text-zinc-500 font-mono text-xs sm:text-sm whitespace-nowrap select-none shrink-0">
+            shourl-alpha.vercel.app/
+          </span>
           <input
-            className="w-full bg-zinc-800/50 border border-zinc-700 text-white p-4 pl-44 rounded-2xl focus:outline-none focus:ring-2 focus:ring-blue-500/50 focus:border-blue-500 transition-all placeholder:text-zinc-600"
+            className="w-full bg-transparent text-white p-4 pl-0.5 rounded-2xl focus:outline-none placeholder:text-zinc-600 font-mono text-sm"
             type="text"
             placeholder="alias"
             onChange={(e) => setshorturl(e.target.value)}
