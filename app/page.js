@@ -118,7 +118,7 @@ export default function HomePage() {
           </p>
 
           {/* The interactive form (client component) */}
-          <div className="text-left mt-4">
+          <div id="shorten" className="text-left mt-4 scroll-mt-28">
             <HomeForm />
           </div>
 
@@ -260,13 +260,12 @@ export default function HomePage() {
             Join thousands of users who trust ShoURL as their go-to free URL shortener. No account needed — just paste, alias, and go.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <a
-              href="#"
-              onClick={(e) => { e.preventDefault(); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+            <Link
+              href="#shorten"
               className="px-8 py-3 bg-blue-500 hover:bg-blue-600 text-white font-bold rounded-full transition-all duration-300 hover:scale-105"
             >
               Shorten a URL Now →
-            </a>
+            </Link>
             <Link
               href="/about"
               className="px-8 py-3 bg-zinc-800 hover:bg-zinc-700 text-white font-semibold rounded-full transition-all duration-300"
